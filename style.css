@@ -320,14 +320,13 @@ background-color: var(--main-color);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect for buttons */
+
 .btn:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
 
-/* Styling for the headings in the about and services sections */
-/* General styles for the "about" section */
+
 .about {
   padding: 50px;
   background-color: #f8f9fa; 
@@ -349,7 +348,7 @@ background-color: var(--main-color);
   transform: scale(1.05);
 }
 
-/* Styling the row containing the images and content */
+
 .about .row-1 {
   display: flex;
   align-items: center;
@@ -437,6 +436,27 @@ background-color: var(--main-color);
   flex-wrap: wrap;
 }
 
+
+
+
+@media (max-width: 768px) {
+  
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+    width: 45%; 
+  }
+  .service-item{
+    width:90%;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
 .service .service-item {
   background-color: #f8f9fa;
   padding: 20px;
@@ -461,7 +481,7 @@ background-color: var(--main-color);
   font-size: 1.2rem;
 }
 
-/* Photo styling for all sections */
+
 
 .home .image img,
 .about .image img,
@@ -505,7 +525,7 @@ background-color: var(--main-color);
 
 .img img {
   flex: 1;
-  max-width: 48%; /* Adjust as needed for spacing */
+  max-width: 48%; 
 }
 
 .portfolio .heading{
@@ -534,6 +554,10 @@ background-color: var(--main-color);
   transform: translateY(-10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+
+  
 
 .portfolio-item:hover img,
 .service-item:hover img {
@@ -657,13 +681,11 @@ background-color: var(--main-color);
 .map-links a:hover {
     background-color: #0056b3;
 }
-
-/* Ensure all sections have the same background color */
 .about, .service, .experience, .portfolio, .contact {
-  background-color: #f5f5f5; /* You can change this color to your desired background color */
+  background-color: #f5f5f5; 
 }
 
-/* Add this CSS to style the modal */
+
 .modal {
   display: none;
   position: fixed;
@@ -699,3 +721,201 @@ background-color: var(--main-color);
 }
 
 
+@media (max-width: 1200px) {
+body {
+padding-left: 20rem;
+}
+
+header {
+width: 20rem;
+padding: 6rem 2rem;
+}
+
+header .navbar a {
+font-size: 1.8rem;
+margin: 1.5rem 0;
+}
+
+header .follow a {
+font-size: 2.2rem;
+}
+
+.menu-bars {
+font-size: 2.5rem;
+padding: 0.8rem 1.2rem;
+}
+
+.heading {
+font-size: 3.5rem;
+}
+
+section {
+padding: 1rem 5%;
+}
+
+.home .content {
+max-width: 60%;
+}
+
+.home img {
+max-width: 400px;
+}
+
+.btn {
+padding: 8px 18px;
+font-size: 1.6rem;
+}
+
+.about .row-1 {
+flex-direction: column;
+}
+
+.about .image img {
+max-width: 400px;
+}
+
+.contact-container form {
+width: 100%;
+}
+
+.contact-container .contact-info {
+width: 100%;
+}
+}
+
+
+@media (max-width: 768px) {
+body {
+padding-left: 0;
+}
+
+header {
+position: static;
+width: 100%;
+height: auto;
+flex-direction: row;
+padding: 2rem;
+text-align: left;
+}
+
+header .navbar {
+display: none;
+}
+
+header .follow {
+display: none;
+}
+
+.menu-bars {
+display: block;
+position: fixed;
+top: 1rem;
+right: 1rem;
+}
+
+.heading {
+font-size: 3rem;
+}
+
+.home {
+flex-direction: column;
+text-align: center;
+}
+
+.home .content {
+max-width: 80%;
+}
+
+.about .row-1 {
+flex-direction: column;
+text-align: center;
+}
+
+.about .image img {
+max-width: 300px;
+}
+
+.box-container {
+flex-direction: column;
+align-items: center;
+}
+
+.box {
+width: 90%;
+margin-bottom: 20px;
+}
+
+.services-container, .experience-container, .portfolio-container {
+flex-direction: column;
+align-items: center;
+}
+
+.service-item, .experience-item, .portfolio-item {
+width: 90%;
+margin-bottom: 20px;
+}
+
+.contact-container {
+flex-direction: column;
+align-items: center;
+}
+
+.contact-container form, .contact-container .contact-info {
+width: 90%;
+}
+
+.map-container iframe {
+height: 300px;
+}
+
+.map-links a {
+margin: 10px 5px;
+padding: 10px 15px;
+}
+}
+
+@media (max-width: 480px) {
+.heading {
+font-size: 2.5rem;
+}
+
+.home .content {
+max-width: 100%;
+}
+
+.btn {
+padding: 6px 15px;
+font-size: 1.4rem;
+}
+
+.about .image img {
+max-width: 100%;
+}
+
+.contact-container form input, .contact-container form textarea {
+font-size: 1.4rem;
+}
+
+.contact-container form button {
+font-size: 1.4rem;
+}
+
+.footer-container {
+flex-direction: column;
+align-items: center;
+}
+
+.footer-section {
+width: 90%;
+margin: 10px 0;
+}
+
+.footer-bottom ul {
+flex-direction: column;
+align-items: center;
+}
+
+.footer-bottom li {
+margin: 5px 0;
+}
+}
